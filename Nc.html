@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我们的产品 - 新锐恒丰</title>
+    <meta name="keywords" content="新锐恒丰">
+    <meta name="description" content="新锐恒丰">
+    <link href="http://www.inewgrowing.com/statics/css/xrhf/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://www.inewgrowing.com/statics/js/xrhf/jquery.min.js">
+    </script>
+    <!-- animated-css -->
+    <link href="http://www.inewgrowing.com/statics/css/xrhf/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="http://www.inewgrowing.com/statics/js/xrhf/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!-- animated-css -->
+    <!-- Custom Theme files -->
+    <link href="http://www.inewgrowing.com/statics/css/xrhf/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript">
+    addEventListener("load", function() {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+    </script>
+    </script>
+    <!--webfonts-->
+    <link href='http://fonts.useso.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
+</head>
+
+<body>
+    <!-- conatiner -->
+    <!-- top-header -->
+    <div class="top-header products-header" style="background:url(http://www.inewgrowing.com/uploadfile/2015/0615/20150615015239384.jpg) no-repeat 50%;">
+        <h1>我们的产品</h1>
+    </div>
+    <div class="header">
+        <div class="sticky-navigation">
+            <div class="fixed-header">
+                <div class="container">
+                    <div class="top-menu">
+                        <span class="menu"> </span>
+                        <ul>
+                            <li><a href="http://www.inewgrowing.com/index.html">首页</a></li>
+                            <li><a href="http://www.inewgrowing.com/Na.html?m=content&c=index&a=lists&catid=8">关于我们</a></li>
+                            <li><a href="http://www.inewgrowing.com/Nb.html?m=content&c=index&a=lists&catid=11">技术服务</a></li>
+                            <li class="active"><a href="http://www.inewgrowing.com/Nc.html?m=content&c=index&a=lists&catid=9">产品</a></li>
+                            <li><a href="http://www.inewgrowing.com/Nd.html?m=content&c=index&a=lists&catid=10">联系我们</a></li>
+                        </ul>
+                    </div>
+                    <script>
+                    $("span.menu").click(function() {
+                        $(".top-menu ul").slideToggle(500, function() {});
+                    });
+                    </script>
+                    <!-- search -->
+                    <div class="top-search">
+                        <!-- <form>
+                                    <input type="text">
+                                    <input type="submit" value="serach" />
+                                </form> -->
+                        <form action="http://www.inewgrowing.com/index.php" method="get" target="_blank">
+                            <input type="hidden" name="m" value="search" />
+                            <input type="hidden" name="c" value="index" />
+                            <input type="hidden" name="a" value="init" />
+                            <input type="hidden" name="typeid" value="1" id="typeid" />
+                            <input type="hidden" name="siteid" value="1" id="siteid" />
+                            <input type="text" name="q" id="q" onkeypress="EnterPress(event)" onkeydown="EnterPress()" onclick="ClearContent(this);" type="text">
+                            <!-- <button id="searchBtn" class="hideFont" type="submit"></button> -->
+                            <input id="searchBtn" type="submit" value="搜索" />
+                        </form>
+                    </div>
+                    <div class="clearfix"> </div>
+                    <!-- search -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-->
+    <script>
+    $('#searchBtn').click(function() {
+        var _k = $('#q').val();
+        if (!_k) {
+            return (false);
+        }
+    })
+    </script>
+    <!-- script-for sticky-nav -->
+    <script>
+    $(document).ready(function() {
+        var navoffeset = $(".header").offset().top;
+        $(window).scroll(function() {
+            var scrollpos = $(window).scrollTop();
+            if (scrollpos >= navoffeset) {
+                $(".header").addClass("fixed");
+            } else {
+                $(".header").removeClass("fixed");
+            }
+        });
+
+    });
+    </script>
+    <!-- Products -->
+    <div class="products">
+        <div class="container">
+            <div class="products-head text-center">
+                <!-- <h3>我们的产品</h3> -->
+                <!-- <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span> -->
+            </div>
+            <div class="example products-grids">
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=9" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/0528/20150528043908911.png" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=8" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/0528/20150528043250386.png" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=7" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/1012/20151012025038948.jpg" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=6" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/0528/20150528043519485.png" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=5" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/0528/20150528043357362.png" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=4" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/0528/20150528043438390.png" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=3" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/0528/20150528043310786.png" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=2" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/0528/20150528043250386.png" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 products-grid wow bounceIn" data-wow-delay="0.4s">
+                    <a href="http://www.inewgrowing.com/index.php?m=content&c=index&a=show&catid=9&id=1" class="b-link-stripe b-animate-go  thickbox">
+                        <div class="b-line b-line1"></div>
+                        <div class="b-line b-line2"></div>
+                        <div class="b-line b-line3"></div>
+                        <div class="b-line b-line4"></div>
+                        <div class="b-line b-line5"></div>
+                        <img class="img-responsive" src="http://www.inewgrowing.com/uploadfile/2015/0528/20150528043226986.png" style="top: 0px;" alt=" " />
+                        <div class="b-wrapper">
+                            <h2 class="b-animate b-from-left    b-delay03 ">
+                                        <img src="http://www.inewgrowing.com/statics/images/xrhf/plus.png" alt="" style="top: 0px;">
+                                    </h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"> </div>
+                <div id="fenye"></div>
+            </div>
+            <!-- products-latest-news -->
+            <!-- products-latest-news-grids -->
+        </div>
+        <!-- products-latest-news -->
+    </div>
+    </div>
+    <!-- Services -->
+    <!--soical-share -->
+    <div class="social-share text-center">
+        <div class="container">
+            <h3>分享</h3>
+            <ul class="bdsharebuttonbox">
+                <li>
+                    <a class="dribble bds_weixin" data-cmd="weixin" title="分享到微信朋友圈" href="#"></a>
+                </li>
+                <li>
+                    <a class="facebook bds_qzone" data-cmd="qzone" title="分享到QQ空间" href="#"></a>
+                </li>
+                <li>
+                    <a class="twitter bds_tsina" data-cmd="tsina" title="分享到新浪微博" href="#"></a>
+                </li>
+                <div class="clearfix"> </div>
+            </ul>
+        </div>
+    </div>
+    <!--soical-share -->
+    <!-- news-letter -->
+    <div class="news-letter">
+        <div class="container">
+            <div class="news-letter-left wow fadeInLeft" data-wow-delay="0.4s">
+                <h3><span> </span> 邮件分享</h3>
+            </div>
+            <div class="news-letter-right wow fadeInRight" data-wow-delay="0.4s">
+                <form>
+                    <input type="text" class="text" maxlength="20" value="newgrowing@126.com" disabled="disabled">
+                    <a href="mailto:newgrowing@126.com"></a>
+                </form>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-left wow fadeInLeft" data-wow-delay="0.4s">
+                <ul>
+                    <li><a href="http://www.inewgrowing.com/index.html">首页</a></li>
+                    <li><a href="http://www.inewgrowing.com/Na.html?m=content&c=index&a=lists&catid=8">关于我们</a></li>
+                    <li><a href="http://www.inewgrowing.com/Nb.html?m=content&c=index&a=lists&catid=11">技术服务</a></li>
+                    <li class="active"><a href="http://www.inewgrowing.com/Nc.html?m=content&c=index&a=lists&catid=9">产品</a></li>
+                    <li><a href="http://www.inewgrowing.com/Nd.html?m=content&c=index&a=lists&catid=10">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-right wow fadeInRight" data-wow-delay="0.4s">
+                <p>Copyright © 2015.北京新锐恒丰生物科技有限公司.</p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <script>
+    window._bd_share_config = {
+        "common": {
+            "bdSnsKey": {},
+            "bdText": "",
+            "bdMini": "2",
+            "bdMiniList": false,
+            "bdPic": "",
+            "bdStyle": "0",
+            "bdSize": "16"
+        },
+        "share": {}
+    };
+    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+    <script>
+    /*window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","bdhome"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];*/
+    </script>
+    </div>
+    <!-- conatiner -->
+    <div style="display:none">
+        <script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script>
+    </div>
+</body>
+
+</html>
