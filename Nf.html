@@ -1,0 +1,237 @@
+<div class="header">
+    <div class="sticky-navigation">
+        <div class="fixed-header">
+            <div class="container">
+                <div class="top-menu">
+                    <span class="menu"> </span>
+                    <ul>
+                        <li class="active"><a href="http://www.inewgrowing.com/index.php">首页</a></li>
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">技术服务</a></li>
+                        <li><a href="">产品</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+                <script>
+                $("span.menu").click(function() {
+                    $(".top-menu ul").slideToggle(500, function() {});
+                });
+                </script>
+                <!-- search -->
+                <div class="top-search">
+                    <!-- <form>
+				            		<input type="text">
+				            		<input type="submit" value="serach" />
+				            	</form> -->
+                    <form action="http://www.inewgrowing.com/index.php" method="get" target="_blank">
+                        <input type="hidden" name="m" value="search" />
+                        <input type="hidden" name="c" value="index" />
+                        <input type="hidden" name="a" value="init" />
+                        <input type="hidden" name="typeid" value="1" id="typeid" />
+                        <input type="hidden" name="siteid" value="1" id="siteid" />
+                        <input type="text" name="q" id="q" onkeypress="EnterPress(event)" onkeydown="EnterPress()" onclick="ClearContent(this);" type="text">
+                        <!-- <button id="searchBtn" class="hideFont" type="submit"></button> -->
+                        <input id="searchBtn" type="submit" value="搜索" />
+                    </form>
+                </div>
+                <div class="clearfix"> </div>
+                <!-- search -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header-->
+<script>
+$('#searchBtn').click(function() {
+    var _k = $('#q').val();
+    if (!_k) {
+        return (false);
+    }
+})
+</script>
+<link href="http://www.inewgrowing.com/statics/css/table_form.css" rel="stylesheet" type="text/css" />
+<link href="http://www.inewgrowing.com/statics/css/dialog.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.inewgrowing.com/statics/js/dialog.js"></script>
+<div class="main">
+    <div class="col-left">
+        <div class="crumbs"><a href="http://www.inewgrowing.com">首页</a><span> &gt; </span><a href="http://www.inewgrowing.com/index.php?m=formguide&c=index&a=index&siteid=1">表单向导</a> <span> &gt; </span> 联系我们</div>
+        <div id="Article">
+            <h1>联系我们</h1>
+            <div class="content">
+                <form method="post" action="?m=formguide&c=index&a=show&formid=13&siteid=1" name="myform" id="myform">
+                    <table class="table_form" width="100%" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <th width="80">
+                                    <font color="red">*</font> 姓名 </th>
+                                <td>
+                                    <input type="text" name="info[name]" id="name" size="50" value="" class="input-text"> </td>
+                            </tr>
+                            <tr>
+                                <th width="80">
+                                    <font color="red">*</font> 电子邮件 </th>
+                                <td>
+                                    <input type="text" name="info[email]" id="email" size="50" value="" class="input-text"> </td>
+                            </tr>
+                            <tr>
+                                <th width="80">
+                                    <font color="red">*</font> 电话号码 </th>
+                                <td>
+                                    <input type="text" name="info[number]" id="number" size="50" value="" class="input-text"> </td>
+                            </tr>
+                            <tr>
+                                <th width="80"> 信息 </th>
+                                <td>
+                                    <textarea name='info[message]' id='message' style='width:100%%;height:46px;'></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="submit" name="dosubmit" id="dosubmit" value=" 提交 ">&nbsp;
+                    <input type="reset" value=" 取消 ">
+                </form>
+            </div>
+        </div>
+        <div class="bk10"></div>
+    </div>
+    <div class="col-auto">
+        <div class="box">
+            <h5 class="title-2">频道总排行</h5>
+            <ul class="content digg">
+            </ul>
+        </div>
+        <div class="bk10"></div>
+        <div class="box">
+            <h5 class="title-2">频道本月排行</h5>
+            <ul class="content rank">
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+<!--
+function show_ajax(obj) {
+    var keywords = $(obj).text();
+    var offset = $(obj).offset();
+    var jsonitem = '';
+    $.getJSON("http://www.inewgrowing.com/index.php?m=content&c=index&a=json_list&type=keyword&modelid=13&id=&keywords=" + encodeURIComponent(keywords),
+        function(data) {
+            var j = 1;
+            var string = "<div class='point key-float'><div style='position:relative'><div class='arro'></div>";
+            string += "<a href='JavaScript:;' onclick='$(this).parent().parent().remove();' hidefocus='true' class='close'><span>关闭</span></a><div class='contents f12'>";
+            if (data != 0) {
+                $.each(data, function(i, item) {
+                    j = i + 1;
+                    jsonitem += "<a href='" + item.url + "' target='_blank'>" + j + "、" + item.title + "</a><BR>";
+
+                });
+                string += jsonitem;
+            } else {
+                string += '没有找到相关的信息！';
+            }
+            string += "</div><span class='o1'></span><span class='o2'></span><span class='o3'></span><span class='o4'></span></div></div>";
+            $(obj).after(string);
+            $('.key-float').mouseover(
+                function() {
+                    $(this).siblings().css({
+                        "z-index": 0
+                    })
+                    $(this).css({
+                        "z-index": 1001
+                    });
+                }
+            )
+            $(obj).next().css({
+                "left": +offset.left - 100,
+                "top": +offset.top + $(obj).height() + 12
+            });
+        });
+}
+
+function add_favorite(title) {
+    $.getJSON('http://www.inewgrowing.com/api.php?op=add_favorite&title=' + title + '&url=' + encodeURIComponent(location.href) + '&' + Math.random() + '&callback=?', function(data) {
+        if (data.status == 1) {
+            $("#favorite").html('收藏成功');
+        } else {
+            alert('请登录');
+        }
+    });
+}
+
+$(function() {
+        $('#Article .content img').LoadImage(true, 660, 660, 'http://www.inewgrowing.com/statics/images/s_nopic.gif');
+    })
+    //-->
+</script>
+<script language="JavaScript" src="http://www.inewgrowing.com/api.php?op=count&id=&modelid=13"></script>
+<!--soical-share -->
+<div class="social-share text-center">
+    <div class="container">
+        <h3>分享</h3>
+        <ul class="bdsharebuttonbox">
+            <li>
+                <a class="dribble bds_weixin" data-cmd="weixin" title="分享到微信朋友圈" href="#"></a>
+            </li>
+            <li>
+                <a class="facebook bds_qzone" data-cmd="qzone" title="分享到QQ空间" href="#"></a>
+            </li>
+            <li>
+                <a class="twitter bds_tsina" data-cmd="tsina" title="分享到新浪微博" href="#"></a>
+            </li>
+            <div class="clearfix"> </div>
+        </ul>
+    </div>
+</div>
+<!--soical-share -->
+<!-- news-letter -->
+<div class="news-letter">
+    <div class="container">
+        <div class="news-letter-left wow fadeInLeft" data-wow-delay="0.4s">
+            <h3><span> </span> 邮件分享</h3>
+        </div>
+        <div class="news-letter-right wow fadeInRight" data-wow-delay="0.4s">
+            <form>
+                <input type="text" class="text" maxlength="20" value="newgrowing@126.com" disabled="disabled">
+                <a href="mailto:newgrowing@126.com"></a>
+            </form>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-left wow fadeInLeft" data-wow-delay="0.4s">
+            <ul>
+                <li class="active"><a href="http://www.inewgrowing.com/index.php">首页</a></li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">技术服务</a></li>
+                <li><a href="">产品</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="footer-right wow fadeInRight" data-wow-delay="0.4s">
+            <p>Copyright © 2015.北京新锐恒丰生物科技有限公司.</p>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!-- footer -->
+<script>
+window._bd_share_config = {
+    "common": {
+        "bdSnsKey": {},
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": "",
+        "bdStyle": "0",
+        "bdSize": "16"
+    },
+    "share": {}
+};
+with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<script>
+/*window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","bdhome"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];*/
+</script>
