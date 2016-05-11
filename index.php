@@ -49,7 +49,7 @@
                         <span class="menu"> </span>
                         <ul>
                             <li class="active"><a href="http://www.inewgrowing.com/index.php">首页</a></li>
-                            <li class="active"><a href="http://www.inewgrowing.com/Na.html?m=content&c=index&a=lists&catid=8">关于我们</a></li>
+                            <li><a href="http://www.inewgrowing.com/Na.html?m=content&c=index&a=lists&catid=8">关于我们</a></li>
                             <li><a href="http://www.inewgrowing.com/Nb.html?m=content&c=index&a=lists&catid=11">技术服务</a></li>
                             <li><a href="http://www.inewgrowing.com/Nc.html?m=content&c=index&a=lists&catid=9">产品</a></li>
                             <li><a href="http://www.inewgrowing.com/Nd.html?m=content&c=index&a=lists&catid=10">联系我们</a></li>
@@ -397,7 +397,7 @@
             <div class="footer-left wow fadeInLeft" data-wow-delay="0.4s">
                 <ul>
                     <li class="active"><a href="http://www.inewgrowing.com/index.php">首页</a></li>
-                    <li class="active"><a href="http://www.inewgrowing.com/Na.html?m=content&c=index&a=lists&catid=8">关于我们</a></li>
+                    <li><a href="http://www.inewgrowing.com/Na.html?m=content&c=index&a=lists&catid=8">关于我们</a></li>
                     <li><a href="http://www.inewgrowing.com/Nb.html?m=content&c=index&a=lists&catid=11">技术服务</a></li>
                     <li><a href="http://www.inewgrowing.com/Nc.html?m=content&c=index&a=lists&catid=9">产品</a></li>
                     <li><a href="http://www.inewgrowing.com/Nd.html?m=content&c=index&a=lists&catid=10">联系我们</a></li>                    
